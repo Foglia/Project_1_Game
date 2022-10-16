@@ -1,0 +1,23 @@
+// Draw an Image
+
+let imageName = newImage();
+imageName.src = 'path/img.png';
+
+ctx.drawImage(imageName, x, y, width, heigth);
+
+// FIRST ERROR:
+// With the following code, I create another rect (on the top corner of the screen) 
+by pressing the arrow keys. Cause: velocity is not definide and the controlers have
+initial x,y, w, h references.
+
+move() {
+    window.addEventListener('keydown', (event) => 
+    {
+        switch(event.code) {
+        case 'ArrowRigh':
+            x += 1;
+            break;
+        case 'ArrowLeft':
+            x -= 1;
+            break;        
+    }; 

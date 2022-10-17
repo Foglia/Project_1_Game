@@ -21,3 +21,19 @@ move() {
             x -= 1;
             break;        
     }; 
+
+
+// CONTROLERS
+
+        case 'ArrowRight': 
+            player.moveRight
+            if (player.x > 1200) player.x -= 0;
+            else player.x += 5;
+            break;  // always remember the break
+        case 'ArrowLeft': 
+            player.moveLeft
+            player.speedX -= 5;
+            break;  // always remember the break
+
+ArrowLeft  case was constructed based on velocity, while the ArrowRight movement 
+only take the rect position / frames. 

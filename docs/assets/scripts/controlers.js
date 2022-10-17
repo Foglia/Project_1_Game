@@ -3,11 +3,24 @@
 document.addEventListener('keydown', (e) => {
     switch(e.code){
         case 'ArrowRight': 
-            player.speedX += 1;
+            player.moveRight
+            if (player.x > 1200) player.x -= 0;
+            else player.x += 50;
             break;  // always remember the break
         case 'ArrowLeft': 
-            player.speedX -= 1;
-            break;  // always remember the break
+            player.moveLeft
+            if (player.x < 0) player.x += 0;
+            else player.x -= 50;
+            break;
+            //                                                                                                                                                                               Velocity based code
+            //player.moveLeft
+            //player.speedX -= 5;
+            //break;  // always remember the break
+        case 'Enter':
+            player.reStart
+            player.x = 1200; 
+            player.y = 350; 
+            break;
     }
   });
   // This was add as a way to better control the rect.

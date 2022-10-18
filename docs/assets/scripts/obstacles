@@ -1,0 +1,35 @@
+// Kills the player
+
+class Obstacles {
+    constructor(x, y, w, h, color) {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        this.color = color;
+        this.ctx = ctx; 
+        this.image = new Image();
+        this.image.src = "/docs/assets/images/timon.png";
+        this.image.src = "/docs/assets/images/ancor.png";
+    }
+    move(){
+        this.y++;
+    }
+    draw(){
+        ctx.drawImage(this.image, this.x, this.y, this.w, this.h);
+        // this.ctx.fillStyle = this.color;
+        // this.ctx.fillRect(this.x, this.y, this.w, this.h); 
+    }
+    top() {
+        return this.y;
+      }
+      bottom() {
+        return this.y + this.h;
+      }
+      left() {
+        return this.x;
+      }
+      right() {
+        return this.x + this.w;
+      }
+  }

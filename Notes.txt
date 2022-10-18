@@ -1,11 +1,10 @@
-// Draw an Image
-
+..// Draw an Image
 let imageName = newImage();
 imageName.src = 'path/img.png';
 
 ctx.drawImage(imageName, x, y, width, heigth);
 
-// FIRST ERROR:
+..// FIRST ERROR:
 // With the following code, I create another rect (on the top corner of the screen) 
 by pressing the arrow keys. Cause: velocity is not definide and the controlers have
 initial x,y, w, h references.
@@ -23,7 +22,7 @@ move() {
     }; 
 
 
-// CONTROLERS
+..// CONTROLERS
 
         case 'ArrowRight': 
             player.moveRight
@@ -37,3 +36,18 @@ move() {
 
 ArrowLeft  case was constructed based on velocity, while the ArrowRight movement 
 only take the rect position / frames. 
+
+..// Function - Update speedX or increase speedX
+code to test:
+
+const crashed = this.obstacles2.some((obstacles2) => {
+    return this.player.crashWith(obstacles2); 
+  });
+  if (crashed) {
+    player.x = player.speedX + 1;
+  }
+};
+
+the above lines returned a new position x for the player, make it smoother
+
+// Renamed Classes = Turbo, Key, Door

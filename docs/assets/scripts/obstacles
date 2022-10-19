@@ -9,8 +9,8 @@ class Obstacles {
         this.color = color;
         this.ctx = ctx; 
         this.image = new Image();
-        this.image.src = "/docs/assets/images/timon.png";
-        this.image.src = "/docs/assets/images/ancor.png";
+        this.image.src = "docs/assets/images/timon.png";
+        this.image.src = "docs/assets/images/ancor.png";
     }
     move(){
         this.y++;

@@ -21,9 +21,9 @@ class Game {
    clear() {
     this.ctx.clearRect(0, 0, this.width, this.height);
     ctx.fillStyle = 'lightblue'
-    ctx.fillRect (0, 0, 1300, 400);
+    ctx.fillRect (0, 0, 1420, 400);
     ctx.fillStyle = 'lightgrey'
-    ctx.fillRect (0, 400, 1300, 100);
+    ctx.fillRect (0, 400, 1420, 100);
 }
 
    update = () => {
@@ -65,7 +65,7 @@ class Game {
      this.turbo.push(new Turbo(Math.floor(Math.random() * 1300), 0, 30, 50, 'white'));
  }
   if (this.frames % 900 === 0 ){ 
-     this.key.push(new Key(Math.floor(Math.random() * 1300), 0, 20, 20, 'red'));
+     this.key.push(new Key(Math.floor(Math.random() * 1300), 0, 60, 60, 'red'));
  }
 }
 stop() {

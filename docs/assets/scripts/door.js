@@ -6,10 +6,11 @@ class Door {
         this.h = h;
         this.color = color;
         this.ctx = ctx; //without it would not work
+        this.image = new Image();
+        this.image.src = "docs/assets/images/door.png";
     }
     draw(){
-        this.ctx.fillStyle = this.color;
-        this.ctx.fillRect(this.x, this.y, this.w, this.h); 
+      ctx.drawImage(this.image, this.x, this.y, this.w, this.h);
     }
     // checkDoor(){
     //   const locked = 

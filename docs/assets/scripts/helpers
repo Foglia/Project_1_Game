@@ -8,15 +8,13 @@ class Turbo {
         this.color = color;
         this.ctx = ctx; 
         this.image = new Image();
-        this.image.src = "/docs/assets/images/drink.png";
+        this.image.src = "docs/assets/images/drink.png";
     }
     move(){
       this.y++;
     }
     draw(){
       ctx.drawImage(this.image, this.x, this.y, this.w, this.h);
-        // this.ctx.fillStyle = this.color;
-        // this.ctx.fillRect(this.x, this.y, this.w, this.h); 
     }
     top() {
         return this.y;
@@ -39,15 +37,15 @@ class Turbo {
         this.y = y;
         this.w = w;
         this.h = h;
-        this.color = color;
         this.ctx = ctx; 
+        this.image = new Image();
+        this.image.src = "docs/assets/images/key.png";
     }
     move(){
         this.y++;
     }
     draw(){
-        this.ctx.fillStyle = this.color;
-        this.ctx.fillRect(this.x, this.y, this.w, this.h); 
+      ctx.drawImage(this.image, this.x, this.y, this.w, this.h);
     }
     top() {
         return this.y;

@@ -11,15 +11,14 @@ class Player {
        this.speedX = 5; 
        this.speedY = 0;
        this.image = new Image();
-       this.image.src = "/docs/assets/images/oldlady.png";
+       this.image.src = "docs/assets/images/oldlady.png";
     }
     draw(){
-
         ctx.drawImage(this.image, this.x, this.y, this.w, this.h);
     }
 
     resetPosition() {
-        this.x = 1200; 
+        this.x = 1320; 
         this.y = 340;  
     }
     top() {

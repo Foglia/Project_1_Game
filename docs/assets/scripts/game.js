@@ -11,23 +11,32 @@ class Game {
     this.key = [];
     this.intervalId = null;     //the def. of game's interval
     this.frames = 0;          // Can use for ex. track of the time / frequency of enemies 
+    this.background = new Image();
     this.hasKey = false;
 }
 
    start() {
     this.intervalId = setInterval(this.update, 1000 / 60); //last element is the vel
 }
+drawBackground() {
+  this.background.src = "docs/assets/images/background.png";
+  this.ctx.drawImage(this.background, 0, 0, 1420, 500);
+}
 
    clear() {
-    this.ctx.clearRect(0, 0, this.width, this.height);
-    ctx.fillStyle = 'lightblue'
-    ctx.fillRect (0, 0, 1420, 400);
-    ctx.fillStyle = 'lightgrey'
-    ctx.fillRect (0, 400, 1420, 100);
+    // this.image = new Image();
+    // this.image.src = "docs/assetes/images/background";
+    // ctx.drawImage(this.image, this.x, this.y, this.w, this.h);
+    // this.ctx.clearRect(0, 0, this.width, this.height);
+    // ctx.fillStyle = 'lightblue'
+    // ctx.fillRect (0, 0, 1420, 400);
+    // ctx.fillStyle = 'lightgrey'
+    // ctx.fillRect (0, 400, 1420, 100);
 }
 
    update = () => {
     this.frames++;           //increase things based on frames - see the func below
+    this.drawBackground();
     this.clear();
     this.door.draw();
     this.player.draw();
@@ -65,7 +74,7 @@ class Game {
      this.turbo.push(new Turbo(Math.floor(Math.random() * 1300), 0, 30, 50, 'white'));
  }
   if (this.frames % 900 === 0 ){ 
-     this.key.push(new Key(Math.floor(Math.random() * 1300), 0, 60, 60, 'red'));
+     this.key.push(new Key(Math.floor(Math.random() * 1300), 0, 80, 80, 'red'));
  }
 }
 stop() {

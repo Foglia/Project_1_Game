@@ -4,27 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="docs/assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,600;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="docs/assets/styles/style.css">
     <title>Project 1</title>
 </head>
 <body>
     <div>
-    <h1>CRUISE RACE</h1>
-    </div>    
-    <style></style>
-    <style></style>
-    <!-- Create start-screen here  -->
+    <h1><img src="docs/assets/images/porthole.jpg">CRUISE RACE<img src="/docs/assets/images/porthole.jpg"></h1>
+    </div>  
+    <div>
+        <h3><h3>
+        <article></article>    
+    </div>
+        <!-- Create start-screen here  -->
     <!-- On css create a class hidden that has visibility: hidden /display: none -->
     <!-- Once you press start, toggle that class onto the start-screen -->
     <!-- <div id="start-screen">Hello</div>
     <div id="game-over"></div> -->
-    <canvas id="canvas" width="1420" height="500" style="border: 2px solid grey"></canvas>
-    <script src="docs/assets/scripts/controlers.js"></script>
-    <script src="docs/assets/scripts/helpers"></script>
-    <script src="docs/assets/scripts/obstacles"></script>
-    <script src="docs/assets/scripts/door.js"></script>
-    <script src="docs/assets/scripts/player_nd_door.js"></script>
-    <script src="docs/assets/scripts/game.js"></script>
-    <script src="docs/assets/scripts/index.js"></script>
+    <div>
+    <canvas id="canvas" width="1420" height="500"></canvas>
+    </div>
+    <div class="game">
+    <div id="intro">    
+        <h3>Cruise Race</h3>
+        <br>
+        <p>You don't need to rush while on vacation, but granny got lost on the Lisbon layover and ran late to continue her cruise adventure...
+            The ship is about to leave, hurry up - if you can - and help granny get on the cruise.</p>
+        <img src="docs/assets/images/cruise.png">    
+      </div> 
+      <hr> 
+        <div class="instructions">
+        <div id="controls">    
+        <h3>Controls</h3>
+        <br>
+        <p>Use<b style="color: deeppink"> RIGHT </b> and <b style="color: deeppink"> LEFT </b> arrows to move granny - and yes... she walks extremely slowly (Be patient or catch some HELPERS).
+            The <b style="color: deeppink"> SPACE </b> button puts you back in the initial position without restarting the game.</p>
+        </div>    
+        <br>
+        <br>
+        <div id="objects">    
+        <h3>Objects</h3> 
+        <br>
+        <ul>
+            <li #id="li1"><img src="docs/assets/images/ancor.png"><p><b style="color:deeppink">OBSTACLES:</b>How can anchors fall from the sky? Anyway... These elements are heavy and would immediately kill granny. Be extremely careful and avoid them!</p></li>
+            <br>
+            <li #id="li2"><img src="docs/assets/images/drink.png"><p><b style="color:deeppink">HELPERS:</b> A sip of martini for the vacation mood! It will speed ​​up granny so she can get on the cruise ship right on time</p></li>
+            <br>
+            <li #id="li3"><img src="docs/assets/images/key.png"><p><b style="color:deeppink">KEY:</b> Granny is very distracted, so you must catch her boarding pass. Without it, you will not be able to enter the cruise.</p></li>
+        </ul>
+        </div>        
+    </div>  
+    </div>    
+    <div>
+        <script src="docs/assets/scripts/controlers.js"></script>
+        <script src="docs/assets/scripts/helpers"></script>
+        <script src="docs/assets/scripts/obstacles"></script>
+        <script src="docs/assets/scripts/door.js"></script>
+        <script src="docs/assets/scripts/player_nd_door.js"></script>
+        <script src="docs/assets/scripts/game.js"></script>
+        <script src="docs/assets/scripts/index.js"></script>
+    </div>   
 </body>
 </html>

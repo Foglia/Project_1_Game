@@ -1,0 +1,126 @@
+@font-face{font-family:arcadeclassic;font-style:normal;font-weight:400;src:local('ArcadeClassic'),url(https://fonts.cdnfonts.com/s/6071/ARCADECLASSIC.woff) format('woff')};
+@font-face {
+    font-family: 'ProggyCleanTTSZBP';
+    font-style: normal;
+    font-weight: 400;
+    src: local('ProggyCleanTTSZBP'), url('https://fonts.cdnfonts.com/s/7514/ProggyCleanSZBP.woff') format('woff');
+}
+@font-face {
+    font-family: 'ProggyCleanTTSZ';
+    font-style: normal;
+    font-weight: 400;
+    src: local('ProggyCleanTTSZ'), url('https://fonts.cdnfonts.com/s/7514/ProggyCleanSZ.woff') format('woff');
+}
+@font-face {
+    font-family: 'ProggyCleanTT';
+    font-style: normal;
+    font-weight: 400;
+    src: local('ProggyCleanTT'), url('https://fonts.cdnfonts.com/s/7514/ProggyClean.woff') format('woff');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    color: darkblue;
+    font-size: 90px;
+    font-family: 'ArcadeClassic', sans-serif
+}
+
+h3 {
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 40px;
+    color: deeppink
+}
+
+h1 img {
+    width: 100px;
+    height: 101px;
+    padding: 1px 60px;
+}
+
+p {
+    font-family:'ProggyCleanTT', sans-serif;
+    font-size: 20px;
+}
+
+#canvas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    background-color: aquamarine;
+    margin: auto;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    columns: 2;
+    padding: 1px 80px;
+    margin: 30px;
+}
+
+#intro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    border: solid 1px blue;
+    padding: 40px 50px;
+}
+
+#intro img {
+    width: 674px;
+    height: 500px;
+}
+
+#intro p {
+    text-align: center;
+    font-size: 40px;
+}
+
+.instructions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    border: solid 1px blue;
+    padding: 40px 50px;
+}
+
+.instructions ul {
+    list-style: none;
+    padding-left: 11px;
+    padding-right: 20px;
+}
+
+.instructions img {
+    width: 30px;
+    height: 40px;
+}
+#controls {
+    text-align: justify;
+    font-size: 20px;
+    color: darkblue
+}
+#objects  {
+    font-size: 18px;
+    margin: 10px
+}
+
+

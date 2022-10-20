@@ -8,7 +8,7 @@ class Player {
        this.h = h;
        this.color = color;
        this.ctx = ctx;
-       this.speedX = 5; 
+       this.speedX = 2; 
        this.speedY = 0;
        this.image = new Image();
        this.image.src = "docs/assets/images/oldlady.png";

@@ -16,8 +16,7 @@ let game;
             if(!game) {
                 game = new Game(ctx, 140, 800, player);
                 game.start();
-            }
-            
+        } 
     }
 })
 

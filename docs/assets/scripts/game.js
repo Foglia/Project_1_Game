@@ -125,5 +125,5 @@ if (crashed) {
   }}
 }
 
-let music = new Audio('docs/assets/sounds/titanicflutte.mp3')
+let music = new Audio('./docs/assets/sounds/titanicflutte.mp3')
 music.loop = false;

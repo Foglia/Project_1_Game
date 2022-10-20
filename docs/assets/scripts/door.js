@@ -12,10 +12,6 @@ class Door {
     draw(){
       ctx.drawImage(this.image, this.x, this.y, this.w, this.h);
     }
-    // checkDoor(){
-    //   const locked = 
-    //   if ( this.door.locked === true) return 
-    // }
       top() {
         return this.y;
       }

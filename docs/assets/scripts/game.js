@@ -15,15 +15,16 @@ class Game {
     this.hasKey = false;
 }
 
-   start() {
+start() {
     this.intervalId = setInterval(this.update, 1000 / 60); //last element is the vel
+    music.play();
 }
 drawBackground() {
   this.background.src = "docs/assets/images/background.png";
   this.ctx.drawImage(this.background, 0, 0, 1420, 500);
-}
 
-   clear() {
+}
+clear() {
     // this.image = new Image();
     // this.image.src = "docs/assetes/images/background";
     // ctx.drawImage(this.image, this.x, this.y, this.w, this.h);
@@ -87,13 +88,19 @@ checkGameOver() {
 });
   if (crashed) {
     this.stop();
+    music.pause();
+    music.currentTime = 0;
     alert('TRY HARDER, GRANNY!!')
+    window.location.reload();
   }}
 checkDoor() {
     const crashed = this.player.crashWith(door); 
   if (crashed && this.hasKey && this.player.x < 140) {
     this.stop()
+    music.pause();
+    music.currentTime = 0;
     alert('YOU WON!!')
+    window.location.reload();
   }}
 checkGameUp() { 
     const crashed = this.turbo.some((turbo, index) => {
@@ -117,3 +124,6 @@ if (crashed) {
   this.hasKey = true;
   }}
 }
+
+let music = new Audio('/docs/assets/sounds/titanicflutte.mp3')
+music.loop = false;

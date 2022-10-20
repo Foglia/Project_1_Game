@@ -7,7 +7,7 @@ document.addEventListener('keydown', (e) => {
         case 'ArrowLeft': 
         player.x -= player.speedX;
             break;
-        case 'Space':
+        case 'KeyR':
             player.resetPosition()
             break; 
     }

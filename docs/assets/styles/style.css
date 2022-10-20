@@ -18,7 +18,6 @@
     src: local('ProggyCleanTT'), url('https://fonts.cdnfonts.com/s/7514/ProggyClean.woff') format('woff');
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +28,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    background-color: skyblue;
 }
 
 h1 {
@@ -56,13 +56,22 @@ p {
     font-size: 20px;
 }
 
+hr {
+    color: blue;;
+}
+
 #canvas {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    background-color: aquamarine;
+    background-image: url(/docs/assets/images/backgroundcanvas.png);
     margin: auto;
+}
+
+#start-screen{
+    background-color: white;
+
 }
 
 .game {
@@ -93,8 +102,7 @@ p {
     text-align: center;
     font-size: 40px;
     margin: 20px 50px;
-    font-weight: bolder;
-    
+    font-weight: bolder;   
 }
 
 .instructions {
@@ -102,7 +110,7 @@ p {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    border: solid 1px blue;
+    background-color: aliceblue;
     padding: 40px 50px;
 }
 
@@ -113,16 +121,17 @@ p {
 }
 
 .instructions img {
-    width: 30px;
-    height: 40px;
+    width: 50px;
+    height: 60px;
     align-content: center;
-
 }
+
 #controls {
     text-align: justify;
     font-size: 20px;
     color: darkblue
 }
+
 #objects  {
     font-size: 18px;
     margin: 10px
@@ -130,5 +139,9 @@ p {
 
 #objects li {
     font-size: 18px;
+}
+
+.hidden {
+    visibility: hidden;
 }
 

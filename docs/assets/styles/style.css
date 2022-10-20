@@ -80,18 +80,21 @@ p {
     flex-direction: column;
     align-content: center;
     text-align: center;
-    border: solid 1px blue;
-    padding: 40px 50px;
+    padding: 40px 60px;
 }
 
 #intro img {
     width: 674px;
     height: 500px;
+    padding: 0px 50px;
 }
 
 #intro p {
     text-align: center;
     font-size: 40px;
+    margin: 20px 50px;
+    font-weight: bolder;
+    
 }
 
 .instructions {
@@ -112,6 +115,8 @@ p {
 .instructions img {
     width: 30px;
     height: 40px;
+    align-content: center;
+
 }
 #controls {
     text-align: justify;
@@ -123,4 +128,7 @@ p {
     margin: 10px
 }
 
+#objects li {
+    font-size: 18px;
+}
 

@@ -21,6 +21,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -29,13 +30,24 @@ body {
     flex-direction: column;
     align-content: center;
     background-color: skyblue;
+    align-items: center;
+    max-width: 100vw;
 }
+
+.game-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100vw;
+}
+
 
 h1 {
     padding: 20px;
     text-align: center;
     color: darkblue;
-    font-size: 90px;
+    font-size: 100px;
     font-family: 'ArcadeClassic', sans-serif
 }
 
@@ -66,7 +78,9 @@ hr {
     flex-direction: column;
     align-content: center;
     background-image: url('https://i.ibb.co/hVKPkkt/backgroundcanvas.png');
+    background-size: cover;
     margin: auto;
+    width: 88vw;
 }
 
 #start-screen{
@@ -77,10 +91,12 @@ hr {
 .game {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
     columns: 2;
     padding: 1px 80px;
     margin: 30px;
+    width: 100vw;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 #intro {
@@ -90,6 +106,7 @@ hr {
     align-content: center;
     text-align: center;
     padding: 40px 60px;
+    width: 60vw;
 }
 
 #intro img {
@@ -129,12 +146,14 @@ hr {
 #controls {
     text-align: justify;
     font-size: 20px;
-    color: darkblue
+    color: darkblue;
+    width: 15vw;
 }
 
 #objects  {
     font-size: 18px;
-    margin: 10px
+    width: 15vw;
+    text-align: justify;
 }
 
 #objects li {
@@ -145,4 +164,116 @@ hr {
     visibility: hidden;
 }
 
-/*  */
+div {
+    border:  2px solid red
+}
+
+@media (max-width: 1200px) {
+h1 {
+    font-size: 80px;
+}
+
+#canvas {
+    width: 90vw
+}
+
+.game {
+    padding: 1px 40px;
+    margin: 20px;
+    width: 100vw;
+
+}
+
+#intro {
+    width: 50vw;
+    align-items: center;
+}
+#intro p {
+    font-size: 30px;
+    width: 60vw;
+    text-align: center;
+}
+h3 {
+    font-size: 30px;
+}
+
+.instructions {
+    flex-direction: column;
+    align-content: center;
+    padding: 40px 30px;
+    width: 20vw;
+}
+
+p {
+    font-size: 16px;
+}
+
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 20px;
+    }
+    h1 img {
+        width: 40px;
+        height: 41px;
+        padding: 1px 2px;
+    }
+    
+    #canvas {
+        width: 100vw
+    }
+    
+    .game {
+        padding: 1px 40px;
+        margin: 0px;
+        width: 100vw;
+    
+    }
+    
+    #intro {
+        width: 50vw;
+        align-items: center;
+    }
+    #intro p {
+        font-size: 10px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    #intro img {
+        width: 174px;
+        height: auto;
+        padding: 0px 50px;
+    }
+    
+    .instructions {
+        padding: 40px 0px;
+        width: 50vw;
+    }
+    
+    p {
+        font-size: 10px;
+    }
+
+    #controls {
+        font-size: 10px;
+        width: 25vw;
+    }
+    #objects {
+        font-size: 10px;
+        width: 25vw;
+    }
+
+    .instructions img {
+        width: 10px;
+        height: auto;
+        align-content: center;
+    }
+
+    .instructions ul {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+}

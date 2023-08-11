@@ -164,9 +164,6 @@ hr {
     visibility: hidden;
 }
 
-div {
-    border:  2px solid red
-}
 
 @media (max-width: 1200px) {
 h1 {

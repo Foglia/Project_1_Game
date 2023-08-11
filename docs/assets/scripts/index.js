@@ -17,16 +17,21 @@ let game;
                 game = new Game(ctx, 140, 800, player);
                 game.start();
         } 
+        break;
     }
 })
 
+document.addEventListener('click', (e) => {
+    switch(e.type) {
+        case 'click':
+            if(!game) {
+                game = new Game(ctx, 140, 800, player);
+                game.start();
+        } 
+        break;
+    }
+})
 
-
-
-/* let game = new Game(ctx, 140, 800, player); */
-
- //Game Start
-/*  game.start(); */
 
 
 

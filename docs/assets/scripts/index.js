@@ -21,9 +21,9 @@ let game;
     }
 })
 
-document.addEventListener('click', (e) => {
+document.addEventListener('touchstart', (e) => {
     switch(e.type) {
-        case 'click':
+        case 'touchstart':
             if(!game) {
                 game = new Game(ctx, 140, 800, player);
                 game.start();
